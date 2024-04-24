@@ -79,26 +79,27 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4">
-                                <form action="https://getform.io/f/pbgxvewa" method="POST">
+                                <form action="https://script.google.com/macros/s/AKfycbzbwRfUePKMR2PrdcxCIpLjbCHm_IfVZCSXxyfK04vjWG8tCzHFfkmDYZJzzs9O9POE/exec" method="post" name="contact-form">
+
                                     <div class="form-group">
                                       <label for="companyName">Company Name</label>
-                                      <input type="text" class="form-control"  placeholder="Enter Company Name" required="true">
+                                      <input type="text" class="form-control"  placeholder="Enter Company Name" required="true" name="company-name">
                                     </div>
 
                                    <div class="form-group">
                                         <label for="FullName">Full name</label>
-                                        <input type="text" class="form-control"  placeholder="Enter Your Full Name" required="true">
+                                        <input type="text" class="form-control"  placeholder="Enter Your Full Name" required="true" name="full-name">
                                       </div> 
                                                                          <div class="form-group">
                                         <label for="PhoneNumber">Phone Number</label>
-                                        <input type="tel" class="form-control"  placeholder="Enter your Phone Number" required="true" maxlength="10" pattern="[0-9]{10}">
+                                        <input type="tel" class="form-control"  placeholder="Enter your Phone Number" required="true" maxlength="10" pattern="[0-9]{10}" name="phone-number">
                                       </div>   
                                                                        <div class="form-group">
                                         <label for="Email">Email</label>
-                                        <input type="email" class="form-control"  placeholder="Enter your Email" required="true">
+                                        <input type="email" class="form-control"  placeholder="Enter your Email" required="true" name="email">
                                       </div>    
 
-                                    <button type="submit" class="btn btn-primary">Register!</button>
+                                    <button type="submit" class="btn btn-primary" value="submit" id="submit">Register!</button>
                                   </form>
                             </div>
                             
@@ -140,6 +141,8 @@
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
+        <!--- google sheets script-->
+        <script src="Google Sheet.js"></script>
 </body>
 
 </html>
